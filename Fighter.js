@@ -77,14 +77,16 @@ function fight(fighter, improvedFighter, ...point) {
   }   
 }
 
-var fighter = new Fighter(names.random(), random(1, 1.5), random(150, 200));
+{
+  let fighter = new Fighter(names.random(), random(1, 1.5), random(150, 200));
 
-var improvedFighter = new ImprovedFighter(names.random(), random(1, 1.5), random(100, 150));
+  let improvedFighter = new ImprovedFighter(names.random(), random(1, 1.5), random(100, 150));
 
-console.info(fighter, improvedFighter);
+  console.info(fighter, improvedFighter);
 
-fight(fighter, improvedFighter, 25, 13, 45);
+  fight(fighter, improvedFighter, 25, 13, 45);
 
-var winner = getWinner(fighter, improvedFighter);
+  let winner = getWinner(fighter, improvedFighter);
 
-console.info(`Winner: ${winner.constructor.name} ${winner.name}`);
+  console.info(`Winner: ${winner.constructor.name} ${winner.name}`);
+}
